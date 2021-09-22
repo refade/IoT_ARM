@@ -37,7 +37,7 @@ It is included as adversity, in the combat to malicious applications, the fact o
 
 Antivirus |	Deteccion (%) |	False Negative (%) |	Omission (%)
 --------- | ------------- | ------------------ | -------------
-ESET-NOD32 |	82.6 |	17.3 |	0.1 |
+ESET-NOD32 |	82.6% |	17.3% |	0.1% |
 MicroWorld-eScan	79,9	20,1	0
 Ad-Aware	79,9	19,9	0,2
 BitDefender	79,8	19,9	0,3
