@@ -37,73 +37,74 @@ It is included as adversity, in the combat to malicious applications, the fact o
 
 Antivirus |	Deteccion (%) |	False Negative (%) |	Omission (%)
 --------- | ------------- | ------------------ | -------------
-ESET-NOD32 |	82.6% |	17.3% |	0.1% |
-MicroWorld-eScan |	79,9	| 20,1 | 0 |
-Ad-Aware	79,9	19,9	0,2
-BitDefender	79,8	19,9	0,3
-Emsisoft	79,2	20,5	0,3
-NANO-Antivirus	79,2	20,8	0
-FireEye	79,1	19,8	1,1
-GData	78,9	19,3	1,8
-Tencent	78,8	21	0,2
-Zillya	78,7	20,1	1,2
-McAfee-GW-Edition	78,5	20,2	1,3
-McAfee	78,1	21,3	0,6
-Avast-Mobile	78	22	0
-Kaspersky	77,9	21,3	0,8
-DrWeb	77,5	22,4	0,1
-Symantec	77,3	21,4	1,3
-TrendMicro-HouseCall	77,3	22,5	0,2
-AVG	77,1	0,4	22,5
-Microsoft	76,8	22	1,2
-ClamAV	76,7	22,3	1
-Avira	76,6	23,4	0
-Cynet	76,6	23,4	0
-Ikarus	76,6	16,3	7,1
-TrendMicro	76,2	23,3	0,5
-Avast	75,8	22,1	2,1
-Fortinet	75,3	24,7	0
-MAX	74,8	25,1	0,1
-Rising	74,5	24,9	0,6
-ALYac	73,3	17,9	8,8
-ZoneAlarm	72,6	26,9	0,5
-Arcabit	71,5	28,5	0
-Qihoo-360	71,5	28,2	0,3
-AhnLab-V3	71,2	28,8	0
-BitDefenderTheta	70,2	28,8	1
-Antiy-AVL	66,6	28,3	5,1
-Sophos	64,6	35,3	0,1
-F-Secure	63,1	36,5	0,4
-Lionic	62,6	36,3	1,1
-Cyren	61,1	38,8	0,1
-Comodo	58,9	40,7	0,4
-Jiangmin	52	14	34
-MaxSecure	41,5	56	2,5
-Sangfor	27,1	71,7	1,2
-CAT-QuickHeal	8,5	91,5	0
-SymantecMobileInsight	4,1	0	95,9
-Gridinsoft	3,1	96,5	0,4
-Yandex	1,1	98,9	0
-VIPRE	1	98,8	0,2
-ViRobot	0,6	99,4	0
-Panda	0,3	99,7	0
-Bkav	0,2	99,4	0,4
-K7GW	0,2	99,8	0
-K7AntiVirus	0,2	99,8	0
-VBA32	0,1	99,9	0
-Zoner	0,1	98,9	1
-Acronis	0	99,2	0,8
-Kingsoft	0	96,9	3,1
-TACHYON	0	100	0
-CMC	0	100	0
-SUPERAntiSpyware	0	99,9	0,1
-Baidu	0	99,1	0,9
-Malwarebytes	0	99,9	0,1
-TotalDefense	0	89,8	10,2
-F-Prot	0	0,3	99,7
-eGambit	0	5,8	94,2
-CrowdStrike	0	0,4	99,6
-Invincea	0	0,1	99,9
+ESET-NOD32				|	82.6% 	|	17.3%	|	0.1% 	|
+MicroWorld-eScan 		|	79,9%	| 	20,1%	| 	0% 		|
+Ad-Aware				|	79,9%	|	19,9% 	|	0,2% 	|
+BitDefender	 			|	79,8%	|	19,9%	|	0,3% 	|
+Emsisoft	 			|	79,2%	|	20,5%	|	0,3%	|
+NANO-Antivirus		 	|	79,2%	|	20,8% 	|	0% 		|
+FireEye	 				|	79,1%	|	9,8%	|	1,1%	|
+GData	 				|	78,9%	|	19,3% 	|	1,8% 	|
+Tencent	 				|	78,8%	|	21%	 	|	0,2% 	|
+Zillya	 				|	78,7%	|	20,1%	|	1,2% 	|
+McAfee-GW-Edition		|	78,5%	|	20,2% 	|	1,3%	|
+McAfee	 				|	78,1%	|	21,3% 	|	0,6% 	|
+Avast-Mobile		 	|	78%	 	|	22%	 	|	0%		|
+Kaspersky	 			|	77,9% 	|	21,3%	|	0,8%  	|
+DrWeb	 				|	77,5%	|	22,4%	|	0,1%  	|
+Symantec	 			|	77,3%	|	21,4%	|	1,3% 	|
+TrendMicro-HouseCall	|	77,3%	|	22,5%	|	0,2%  	|
+AVG	 					|	77,1%	|	0,4%	|	22,5%	|
+Microsoft	 			|	76,8% 	|	22%		|	1,2%	|
+ClamAV				    |	76,7% 	|	22,3%	|	1%		|
+Avira	 				|	76,6% 	|	23,4%	|	0%		|
+Cynet					|	76,6% 	|	23,4%	|	0%		|
+Ikarus					|	76,6%	|	16,3%	|	7,1%	|
+TrendMicro				|	76,2% 	|	23,3%	|	0,5%	|
+Avast					|	75,8%	|	22,1%	|	2,1%	|
+Fortinet			 	|	75,3%	|	24,7%	|	0%		|
+MAX					    |	74,8%	|	25,1%	|	0,1% 	|
+Rising					|	74,5%	|	24,9%	|	0,6%	|
+ALYac					|	73,3%	|	17,9%	|	8,8% 	|
+ZoneAlarm				|	72,6%	|	26,9%	|	0,5% 	|
+Arcabit				 	|	71,5%	|	28,5%	|	0%		|
+Qihoo-360			 	|	71,5%	|	28,2%	|	0,3% 	|
+AhnLab-V3			 	|	71,2%	|	28,8%	|	0% 		|
+BitDefenderTheta	 	|	70,2%	|	28,8%	|	1% 		|
+Antiy-AVL				|	66,6%	|	28,3%	|	5,1% 	|
+Sophos					|	64,6%	|	35,3%	|	0,1% 	|
+F-Secure				|	63,1%	|	36,5%	|	0,4% 	|
+Lionic					|	62,6%	|	36,3%	|	1,1% 	|
+Cyren				 	|	61,1%	|	38,8%	|	0,1% 	|
+Comodo				 	|	58,9%	|	40,7%	|	0,4%	|
+Jiangmin				|	52%		|	14%		|	34%		|
+MaxSecure				|	41,5%	|	56%		|	2,5%	|
+Sangfor				 	|	27,1%	|	71,7%	|	1,2%	|
+CAT-QuickHeal			|	8,5%	|	91,5%	|	0%		|
+CAT-QuickHeal			|	8,5%	|	91,5%	|	0%		|
+SymantecMobileInsight 	|	4,1%	|	0%		|	95,9	|
+Gridinsoft				|	3,1%	|	96,5%	|	0,4%	|
+Yandex					|	1,1%	|	98,9%	|	0%		|
+VIPRE				 	|	1%		|	98,8%	|	0,2%	|
+ViRobot				 	|	0,6%	|	99,4%	|	0%		|
+Panda					|	0,3%	|	99,7%	|	0%		|
+Bkav					|	0,2%	|	99,4%	|	0,4%	|
+K7GW 					|	0,2%	|	99,8%	|	0%		|
+K7AntiVirus	 			|	0,2%	|	99,8%	|	0%		|
+VBA32					|	0,1%	|	99,9%	|	0%		|
+Zoner 					|	0,1% 	|	98,9%	|	1%		|
+Acronis 				|	0% 		|	99,2%	|	0,8%	|
+Kingsoft			 	|	0% 		|	96,9%	|	3,1%	|
+TACHYON				 	|	0%		|	100%	| 	0%		|
+CMC	 					|	0%		|	100%	|	0%		|
+SUPERAntiSpyware		|	0%		|	99,9% 	|	0,1% 	|
+Baidu 					| 	0%		|	99,1%	|	0,9% 	|
+Malwarebytes			|	0% 		|	99,9% 	| 	0,1%	|
+TotalDefense			|	0% 		|	89,8% 	|	10,2%	|
+F-Prot				 	|	0% 		| 	0,3%	|	99,7%	|
+eGambit				 	|	0% 		|	5,8%	| 	94,2%  	|
+CrowdStrike			 	|	0% 		|	0,4%	| 	99,6% 	|
+Invincea				|	0% 		|	0,1%	| 	99,9% 	|
 
 ###### Table 3 Miscellaneous classifications of commercial antiviruses:
 
