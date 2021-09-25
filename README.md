@@ -112,7 +112,7 @@ Antivírus |	VirusShare_001627d61a1bde3478ca4965e738dc1e |	VirusShare_075efef8c9
 --------- | ------------------------------------------- | ------------------------------------------- | --------------------------------------------
 ALYac|Trojan.Linux.Generic.69575|Gen:Variant.Backdoor.Linux.Tsunami.1|Trojan.Linux.GenericA.73451
 AVG|ELF:DDoS-S [Trj]|ELF:Gafgyt-DO [Trj]|ELF:DDoS-S [Trj]
-Acronis|||
+Acronis|Undetected|Undetected|
 Ad-Aware|Trojan.Linux.Generic.69575|Gen:Variant.Backdoor.Linux.Tsunami.1|Trojan.Linux.GenericA.73451
 AhnLab-V3|Linux/Mirai.Gen6|Linux/Tsunami.Gen|Linux/Gafgyt.Gen
 Antiy-AVL|Trojan[Backdoor]/Linux.Gafgyt.a|GrayWare/Linux.Generic|Trojan[Backdoor]/Linux.Gafgyt.ac
@@ -120,12 +120,12 @@ Arcabit|Trojan.Linux.Generic.D10FC7|Trojan.Backdoor.Linux.Tsunami.1|Trojan.Linux
 Avast|ELF:DDoS-S [Trj]|ELF:Gafgyt-DO [Trj]|ELF:DDoS-S [Trj]
 Avast-Mobile|ELF:DDoS-S [Trj]|ELF:Tsunami-CR [Trj]|ELF:DDoS-S [Trj]
 Avira|LINUX/Gafgyt.opnd|LINUX/Tsunami.wkuvt|LINUX/Gafgyt.opnd
-Baidu|||
+Baidu|Undetected|Undetected|
 BitDefender|Trojan.Linux.Generic.69575|Gen:Variant.Backdoor.Linux.Tsunami.1|Trojan.Linux.GenericA.73451
 BitDefenderTheta|Gen:NN.Mirai.34608|Gen:NN.Mirai.34608|Gen:NN.Mirai.34608
-Bkav|||
-CAT-QuickHeal||Elf.Trojan.A1198970|
-CMC|||
+Bkav|Undetected|Undetected|
+CAT-QuickHeal|Undetected|Elf.Trojan.A1198970|
+CMC|Undetected|Undetected|
 ClamAV|Unix.Malware.Agent-6769357-0|Unix.Trojan.Mirai-5607483-0|Unix.Trojan.Gafgyt-111
 Comodo|Malware@#3o8smwc385jui|Malware@#3j0a9lm761bhc|Malware@#1vbephabp2pmb
 Cynet|Malicious (score: 85)|Malicious (score: 85)|Malicious (score: 85)
@@ -137,27 +137,27 @@ F-Secure|Malware.LINUX/Gafgyt.opnd|Malware.LINUX/Tsunami.wkuvt|Malware.LINUX/Gaf
 FireEye|Trojan.Linux.Generic.69575|Gen:Variant.Backdoor.Linux.Tsunami.1|Trojan.Linux.GenericA.73451
 Fortinet|ELF/Mirai.AE!tr|ELF/Tsunami.NDJ!tr|ELF/Gafgyt.UN!tr.bdr
 GData|Linux.Trojan.Gafgyt.A|Linux.Trojan.Gafgyt.A|Linux.Trojan.Gafgyt.B
-Gridinsoft|||
+Gridinsoft|Undetected|Undetected|
 Ikarus|Trojan.Linux.Mirai|Trojan.Linux.Fgt|Trojan.Linux.Fgt
 Jiangmin|Backdoor.Linux.cbip|Backdoor.Linux.ksj|Backdoor.Linux.gmy
-K7AntiVirus|||
-K7GW|||
+K7AntiVirus|Undetected|Undetected|
+K7GW|Undetected|Undetected|
 Kaspersky|HEUR:Backdoor.Linux.Gafgyt.a|HEUR:Backdoor.Linux.Tsunami.bh|HEUR:Backdoor.Linux.Gafgyt.ac
-Kingsoft|||
+Kingsoft|Undetected|Undetected|
 Lionic|Trojan.Linux.Gafgyt.4!c|malware (ai score=99)|
 MAX|malware (ai score=99)||malware (ai score=98)
-Malwarebytes||Trojan.Malware.121218.susgen|
+Malwarebytes|Undetected|Trojan.Malware.121218.susgen|
 MaxSecure|Trojan.Malware.121218.susgen|Linux/Gafgyt.h|Trojan.Malware.121218.susgen
 McAfee|Linux/Mirai.g|Linux/Gafgyt.h|Linux/Gafgyt.r
 McAfee-GW-Edition|Linux/Mirai.g|Gen:Variant.Backdoor.Linux.Tsunami.1|Linux/Gafgyt.r
 MicroWorld-eScan|Trojan.Linux.Generic.69575|Backdoor:Linux/Gafgyt.AF!MTB|Trojan.Linux.GenericA.73451
 Microsoft|DDoS:Linux/Gafgyt.YA!MTB|Trojan.ElfArm32.Tsunami.ejtrus|Backdoor:Linux/Gafgyt.AF!MTB
-NANO-Antivirus|Trojan.ElfArm32.Mirai.fkvjsm||Trojan.ElfArm32.Gafgyt.emzwvw
-Panda||Linux/Backdoor.9d5|
+NANO-Antivirus|Trojan.ElfArm32.Mirai.fkvjsm|Undetected|Trojan.ElfArm32.Gafgyt.emzwvw
+Panda|Undetected|Linux/Backdoor.9d5|
 Qihoo-360|Linux/Backdoor.812|Trojan.Gafgyt/Linux!1.A480 (CLASSIC)|Linux/Trojan.DDoS.adc
-Rising|Backdoor.Mirai/Linux!1.BAF6 (CLASSIC)||Backdoor.Gafgyt/Linux!1.A512 (CLASSIC)
-SUPERAntiSpyware|||
-Sangfor||Linux/Tsunami-A|Malware.ELF-Script.Save.07a8c2d7
+Rising|Backdoor.Mirai/Linux!1.BAF6 (CLASSIC)|Undetected|Backdoor.Gafgyt/Linux!1.A512 (CLASSIC)
+SUPERAntiSpyware|Undetected|Undetected|
+Sangfor|Undetected|Linux/Tsunami-A|Malware.ELF-Script.Save.07a8c2d7
 Sophos|Linux/DDoS-CIA|Trojan.Gen.NPE|Linux/DDoS-BI
 Symantec|Trojan.Gen.NPE||Linux.Lightaidra
 TACHYON||Backdoor.Linux.Gafgyt.ya|
@@ -165,13 +165,13 @@ Tencent|Backdoor.Linux.Gafgyt.ff||Backdoor.Linux.Gafgyt.ym
 TotalDefense||Backdoor.Linux.BASHLITE.SMJC|
 TrendMicro|Backdoor.Linux.BASHLITE.SMJC|Backdoor.Linux.BASHLITE.SMJC|Backdoor.Linux.BASHLITE.SMJC
 TrendMicro-HouseCall|Backdoor.Linux.BASHLITE.SMJC||Backdoor.Linux.BASHLITE.SMJC
-VBA32|||
-VIPRE|||
-ViRobot|||
-Yandex||Backdoor.Tsunami.Linux.379|
+VBA32|Undetected|Undetected|
+VIPRE|Undetected|Undetected|
+ViRobot|Undetected|Undetected|
+Yandex|Undetected|Backdoor.Tsunami.Linux.379|
 Zillya|Backdoor.Mirai.Linux.38039|HEUR:Backdoor.Linux.Tsunami.bh|
 ZoneAlarm|HEUR:Backdoor.Linux.Gafgyt.a||HEUR:Backdoor.Linux.Gafgyt.ac
-Zoner|||
+Zoner|Undetected|Undetected|
 
 
 
