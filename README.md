@@ -187,7 +187,7 @@ The benign samples were extracted from GNU/Linux Fedora for ARM architecture, on
 
 ## Dynamic Feature Extraction
 
-The features of Jar files originate through the dynamic analysis of suspicious files. Therefore, in our methodology, the malware is executed in order to infect, intentionally, the JVM installed in Windows 7 audited, in real time (dynamic), by the Cuckoo Sandbox. In total, 2,793 features are generated of each Jar file, regarding the monitoring of the suspect file in the proposed controlled environment. Next, the groups of features are detailed.
+The features of 32-bit ARM files originate through the dynamic analysis of suspicious files. Therefore, in our methodology, the malware is executed in order to infect, intentionally, the GNU/Linux audited, in real time (dynamic), by the Cuckoo Sandbox. In total, 2,793 features are generated of each 32-bit ARM file, regarding the monitoring of the suspect file in the proposed controlled environment. Next, the groups of features are detailed.
 
 ######	Features related to Code Injection, a technique used by an attacker to introduce code into vulnerable programs and change their behavior. The auditory checks whether the tested file try to:
 -	execute a process and inject code while it is uncompressed;
@@ -200,8 +200,7 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	discover where the browser is installed, if there is one in the system.
 -	discover if there is any sniffer or a installed network packet analyzer.
 
-######	Features related to disable Windows components:
--	It is audited if the suspect file tries to disable any of the windows programs: CMD.exe, Device Manager, or Registry Editor, by manipulating the Windows registry (\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Disable).
+######	Features related to disable GNU/Linux components.
 
 ######	Features related to packing and obfuscation. The proposed digital forensic verifies if the suspect file:
 -	has packet or encrypted information indicative of packing
@@ -209,65 +208,47 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	is compressed using UPX (Ultimate Packer for Executables) or VMProtect (software used in order to obfuscate code and virtualize programs).
 -	
 ######	Features related to persistence, functionality of backup information in a system, without the need to register them before. Our Sandbox audit if suspicious file tries to:
--	use javascript in a registry key value in regedit.
 -	create an ADS (Alternate Data Stream), NTFS feature that contains information to locate a specific file by author or title, used maliciously because as the information that is present in it does not change the characteristics of the file associated with it, transform them into an ideal option for building rootkits, because they are hidden (steganography);
--	install a self-executing in windows startup (autorun);
--	install a native executable to run at the beginning of windows boot.
+-	install a self-executing in startup (autorun);
+-	install a native executable to run at the beginning of GNU/Linux boot.
 
-######	Features related to Windows 7 OS (Regedit):
--	Changes in associations between file extensions and software installed on the machine (HKEY_CLASSES_ROOT);
--	Changes to the current user information (HKEY_CURRENT_USER);
--	Driver corruption (HKEY_LOCAL_MACHINE);
--	Changes in Windows appearance settings and settings made by users, such as wallpaper, screensaver, and themes (HKEY_USERS);
--	Changes in Hardware Settings (HKEY_CURRENT_CONFIG).
-
-######	Features related to native Windows 7 OS programs. It is audited, during its execution, if the suspicious file tries to:
+######	Features related to native GNU/Linux programs. It is audited, during its execution, if the suspicious file tries to:
 -	allocate write and read memory for execution, usually for unpacking;
 -	identify analysis tools installed by the location of the installation of said tool;
--	detect the presence of antivirus Avast and BitDefender, through libraries (*. Dll file) present when these antivirus are installed;
--	identify installed antivirus products through the installation directory or registry keys;
--	modify software restriction policies for the purpose of disabling the antivirus;
--	check for known devices or windows from forensic tools and debuggers;
+-	check for known devices or GNU/Linux from forensic tools and debuggers;
 -	detect the presence of the Wine emulator;
 -	install yourself on AppInit to inject into new processes;
--	divert AppLocker through a Powershell script, running regsvr32;
 
-######	Features related to Windows 7 Boot OS. Audit if suspicious file tries to:
+######	Features related to GNU/Linux boot. Audit if suspicious file tries to:
 
 -	modify boot configurations;
 -	install a bootkit (malicious files for the purpose of changing and infecting the master boot record of the computer) through modifications to the hard disk;
--	create office documents in the file system;
--	create a Windows executable file on the file system;
--	create or configure registry keys with a long string of bytes, most likely to store a binary file or configure a malware;
+-	create a executable file on the system;
+-	create or configure registry with a long string of bytes, most likely to store a binary file or configure a malware;
 -	create a service;
--	create a shortcut to an executable file;
--	use the Windows APIs to generate a cryptographic key;
--	generate a malicious DDE document (Dynamic Data Exchange, originally used to facilitate the transfer of data between Microsoft word and other microsoft office programs, but with its function deflected by hackers in the present time, in order to try to introduce lines of malicious code, microsoft office;
+-	use the APIs to generate a cryptographic key;
 -	erase your original disk binary;
 -	load a device driver;
 -	release and execute a binary file;
 -	remove evidence that a file has been downloaded from the Internet without the user being aware of it;
--	create files, registry keys and / or mutexes related to Fakerean Fraudtool malware;
--	use GetSystemMetrics, a Windows function that was originally used to collect measurements of graphics on screen, now used by hackers in conjunction with malicious Ransomware techniques;
--	create files related to the PWDump / FGDump tools, which were originally used for password management, and are used by hackers to bypass Windows security mechanisms;
+-	create files related to Fakerean Fraudtool malware;
 -	connect to an IP BitTorrent Bleepchat (encrypted chat service and P2P from BitTorrent);
 -	connect to IP's related to Chinese instant messaging services, such as QQ, used by hackers maliciously;
--	access Bitcoin / ALTCoin portfolios, which can be used to transfer funds into illegal transactions.
+-	access Bitcoin/ALTCoin portfolios, which can be used to transfer funds into illegal transactions.
 
-######	Features that seek to disable features of Windows 7 OS and other utilities. The audit checks to see if the file can:
+######	Features that seek to disable features of GNU/Linux and other utilities. The audit checks to see if the file can:
 
 -	modify system policies to prevent the launch of specific applications or executables;
 -	disable browser security warnings;
--	disable Windows security features and properties;
+-	disable GNU/Linux security features and properties;
 -	disable google SPDY network protocol support in Mozilla Firefox browsers to increase the ability of an internet malware to gain access to sensitive information;
 -	disable system restore;
--	disable the Windows Error Reporting and Windows Auto Update features.
 
 ######	Features related to executable files. The proposed digital forensic verifies that the suspect file tries to:
 
 -	use the BITSAdmin tool (command line tool originally used to download and upload files, as well as track the progress of this transfer, but which malicious hackers use) to download any file;
 -	halt at least one process during its execution;
--	execute the WaitFor statement (executable present in Windows since its version 7, originally has the function of synchronizing events between networked computers, but which evildoers use in harmful ways), possibly to synchronize malicious activities.
+-	execute the WaitFor statement (it has originally the function of synchronizing events between networked computers, but which evildoers use in harmful ways), possibly to synchronize malicious activities.
 
 ######	Features related to memory dump, process in which the contents of RAM memory is copied for diagnostic purposes. The proposed digital forensics audits if the application tries to:
 -	find malicious URL’s in memory dump processing;
@@ -279,10 +260,6 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 ######	Features related to system modifications:
 -	It is audited if the suspect application tries to create or modify system certificates, security center warnings, user account control behaviors, desktop wallpaper, or ZoneTransfer.ZoneID values in the ADS(Alternate Data Stream).
 
-######	Features related to Microsoft Office. Checks if the tested application tries to:
--	create a suspicious VBA object
--	run microsoft office processes inserted in a command line interface packed object.
-
 ######	Feature related to POS (point of sale), type of attack that aims to obtain the information of credit and debit cards of victims. It is investigated if the audited file tries to:
 -	create files related to malware POS Alina;
 -	contact servers related to malware POS Alina;
@@ -293,11 +270,11 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	contact botnets related to malware POS jackpos;
 -	contact servers related to POS poscardstealer malware.
 
-######	Features related to powershell code injectors. Our Sandbox checks if the tested file:
--	is a powershell malware of powerfun type;
--	is a powershell malware powerworm type;
--	attempts to create a suspicious powershell process;
--	attempts to create log entries via powershell scripts.
+######	Features related to shell code injectors. Our Sandbox checks if the tested file:
+-	is a shell malware of powerfun type;
+-	is a shell malware powerworm type;
+-	attempts to create a suspicious shell process;
+-	attempts to create log entries via shell scripts.
 
 ######	Features related to processes. Checks if the tested file:
 -	is interested in some specific process in execution;
@@ -318,18 +295,17 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	detect if the sandboxes: Cuckoo, Joe, Anubis, Sunbelt, ThreatTrack/GFI/CW or Fortinet are being used, through the presence of own files used by them;
 -	search for known directories where a sandbox can run samples;
 -	check if any human activity is being performed;
--	discover the waiting time of Windows in order to determine the total time of Windows activity;
 -	install a procedure that monitors mouse events;
 -	disconnect or restart the system to bypass the sandbox;
 -	delay analysis tasks;
--	shut down Windows functions monitored by the cuckoo sandbox.
+-	shut down GNU/Linux functions monitored by the cuckoo sandbox.
 
 ######	Features related to Trojans (malicious program that enters a computer masked as another program, legitimate) of remote access, or RAT (Remote Access Trojans). Our Sandbox verifies if the tested server tries to create files, registry keys, and/or mutexes related to RATs: 
 - Adzok, bandook, beastdoor, beebus, bifrose, blackhole/schwarzesonne, blackice, blackshades, bladabindi, bottilda, bozokrat, buzus, comrat, cybergate, darkcloud, darkshell, delf trojan, dibik/shark, evilbot, farfli, fexel, flystudio, fynloski/darkcomet, ghostbot, hesperbot, hkit backdoor, hupigon, icepoint, jewdo backdoor, jorik trojan, karakum/saharabot, koutodoor, aspxor/kuluoz, likseput, madness, madness, magania, minerbot, mybot, naid backdoor, nakbot, netobserve spyware, netshadow, netwire, nitol/servstart, njrat, pasta trojan, pcclient, plugx, poebot/zorenium, poison ivy, pincav/qakbot, rbot, renos trojan, sadbot, senna spy, shadowbot, siggen, spynet, spyrecorder, staser, swrort, travnet, tr0gbot bifrose, turkojan, urlspy, urx botnet, vertexnet, wakbot, xtreme, zegost.
 
 ######	Features related to the banking threats (Trojan horses):
 
--	Find out if the test file tries to create registry keys, Mutexes or Trojan files, and / or try to contact HTTP servers of the known threats. Banking Banking, Banking, Prinyalka Banking, SpyEye, Tinba Banking, Zeus, Zeus P2P, Dridex, Emotet and Online Banking.
+-	Find out if the test file tries to create registry keys, Mutexes or Trojan files, and/or try to contact HTTP servers of the known threats. Banking Banking, Banking, Prinyalka Banking, SpyEye, Tinba Banking, Zeus, Zeus P2P, Dridex, Emotet and Online Banking.
 
 ######	Features related to payload in network. Checks if the server tested tries to:
 -	verify if the network activity contains more than one unique useragent;
@@ -339,7 +315,7 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	connect to a Chinese URL shorter with malicious history;
 -	create mutexes related to remote administration tools VNC (Virtual Remote Computer).
 
-######	Features associated with network traffic hint windows 7 OS in PCAP format. Audit if suspicious document attempts to:
+######	Features associated with network traffic hint GNU/Linux 7 OS in PCAP format. Audit if suspicious document attempts to:
 -	connect with an IP which is not responding to requests;
 -	resolve a suspicious top domain;
 -	start listening (socket) with some server;
@@ -349,7 +325,6 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	connect to some IRC server (possibly part of some BotNet);
 -	make SMTP requests (possibly sending SPAM);
 -	connect to some hidden TOR service through a TOR gateway;
--	start the wscript.exe file, which can indicate a payload download-based script (package body);
 -	generate IDS or IPS alerts with Snort and Suricata (network monitoring and management tools).
 
 ######	Features related to DNS servers (Domain Name System, servers responsible for the translation of URL addresses in IP). It is investigated the audited file tries to:
@@ -362,10 +337,6 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	It is audited if the suspect server the suspect file is a SSH, Telnet, SCP and / or FTP-style FTP client with its files, registry keys and mutexes;
 -	It is investigated whether the suspect file is a suspect downloader (download manager);
 -	It is investigated if the file has in it a path to a pdb extension file, which contains information given directly to the system compiler.
-
-######	Features related to antivirus. Checks if the file being investigated tries to:
-
--	check for registry keys, in regedit, for Chinese antivirus.
 
 ######	Features related to malware. Checks whether the audited file tries to:
 
@@ -426,7 +397,7 @@ The features of Jar files originate through the dynamic analysis of suspicious f
 -	check the amount of memory in the system in order to detect virtual machines with little available memory;
 -	check adapter addresses that can be used to detect virtual network interfaces;
 -	detect a virtual machine by using pseudo devices (parts of the kernel that act as device drivers but do not actually match any hardware present on the machine);
--	detect whether it is running in a window, indicative of VirtualBox usage.
+-	detect whether it is running in a GNU/Linux, indicative of VirtualBox usage.
 
 ######	Features related to Firewall. The proposed digital forensics audits if the file tries to:
 
