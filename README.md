@@ -1,4 +1,4 @@
-# IoT_ARM
+# IoT_MIPS
 Retrieval Internet of Thing for  ARM Malware Analysis
 
 ## Commercial Antivirus Limitation
